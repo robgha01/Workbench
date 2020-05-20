@@ -308,6 +308,7 @@
     <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="static\logos\logo_desktop.png" />
     <Content Include="static\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
