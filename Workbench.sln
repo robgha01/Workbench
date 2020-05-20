@@ -7,14 +7,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workbench", "Workbench\Work
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Carl|Any CPU = Carl|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Robert|Any CPU = Robert|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Carl|Any CPU.ActiveCfg = Carl|Any CPU
+		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Carl|Any CPU.Build.0 = Carl|Any CPU
 		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Robert|Any CPU.ActiveCfg = Robert|Any CPU
+		{6BB9FE98-E8A9-4A76-9B15-BB5EEBFAF418}.Robert|Any CPU.Build.0 = Robert|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

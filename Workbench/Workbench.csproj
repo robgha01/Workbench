@@ -319,7 +319,9 @@
     <Content Include="static\illustrations\social_interaction.png" />
     <Content Include="static\logos\logo_desktop.png" />
     <Content Include="static\main.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <DependentUpon>Web.Base.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -351,10 +353,18 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Start.cshtml" />
+    <None Include="Web.Base.config">
+    </None>
+    <None Include="Web.Carl.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Robert.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
@@ -364,6 +374,12 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Robert|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Carl|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -400,8 +416,8 @@
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-  </Target>
+  </Target>-->
   <Target Name="AfterBuild">
+    <TransformXml Source="web.base.config" Transform="$(ProjectConfigTransformFileName)" Destination="web.config" />
   </Target>
-  -->
 </Project>
