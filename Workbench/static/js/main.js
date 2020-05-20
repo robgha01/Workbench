@@ -1,15 +1,18 @@
-﻿$(document).ready(function() {
-    $("span.random-font-color").each(function (index) {
-  
-        var text = Array.from($(this).text());
+﻿$(document).ready(function () {
+    const colors = ["pomegranate", "governor", "shamrock", "burgundy", "violet", "jaffa", "tainoi", "apple", "lavender", "dodger"];
 
+    $("span.random-font-color").each(function () {  
+        var text = Array.from($(this).text());
         var s = "";
+
         text.forEach(function (entry) {
-            s += '<span class="lavender">ccccc</span>';
+            s += '<span class="' + getColor() + '">' + entry + '</span>';
         });
 
-        console.log(s);
-
+        $(this).html(s);
     });
-
+    
+    function getColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+    }
 });
