@@ -11,6 +11,15 @@ h1 .header-font {
     text-transform: uppercase;
 }
 
+.card-title.header-font {
+    font-family: sandbox_melodramaregular;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
 .pomegranate {
     color: #EF481E;
     
@@ -26,6 +35,14 @@ h1 .header-font {
 
 .burgundy {
     color: #BA3731;
+}
+
+.violet {
+    color: #911AE5;
+}
+
+.card-bg {
+    background-color: #F7F6E7;
 }
 
 
