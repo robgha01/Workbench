@@ -71,7 +71,7 @@
 
         <section class="jumbotron text-center bg-white">
             <div class="container">
-                <h1><span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span></h1>
+                <h1><span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span></h1>
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 <p>
                     <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -84,18 +84,41 @@
             <div class="container">
                 @*<div class="row">*@
                     <div class="card-deck">
-                        @for (var i = 0; i < 5; i++)
+                        @for (var i = 0; i < 8; i++)
                         {
                             @*<div class="col-md-4 py-2">*@
                         <div class="card shadow-sm">
-
-                            @if (i == 3)
+                            @if (i == 0)
+                            {
+                                <img src="~/static/illustrations/consultation.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 1)
+                            {
+                                <img src="~/static/illustrations/parent_training.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 2)
+                            {
+                                <img src="~/static/illustrations/professional_training.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 3)
                             {
                                 <img src="~/static/illustrations/social_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
                             }
                             else if (i == 4)
                             {
+                                <img src="~/static/illustrations/aba_therapy.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 5)
+                            {
+                                <img src="~/static/illustrations/play_therapy.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 6)
+                            {
                                 @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                                <img src="~/static/illustrations/resources.png" class="bd-placeholder-img card-img-top card-bg" />
+                            }
+                            else if (i == 7)
+                            {
                                 <img src="~/static/illustrations/intensive_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
                             }
                             else
