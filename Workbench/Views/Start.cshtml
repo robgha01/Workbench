@@ -50,7 +50,7 @@
     <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
-
+    
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
     <link href="./static/main.css" rel="stylesheet">
@@ -94,7 +94,7 @@
         <section class="jumbotron text-center bg-white">
             <div class="container">
                 <h1>
-                    <span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span>                    
+                    <span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span>
                     <span class="header-font">&nbsp;</span><span class="header-font apple">s</span><span class="header-font burgundy">p</span><span class="header-font governor">e</span><span class="header-font jaffa">c</span><span class="header-font shamrock">t</span><span class="header-font lavender">r</span><span class="header-font tainoi">u</span><span class="header-font dodger">m</span>
                 </h1>
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
@@ -107,13 +107,15 @@
 
         <div class="album py-5 bg-light">
             <div class="container">
-                @*<div class="row">*@
                 <div class="card-deck">
                     <div class="card shadow-sm">
                         <img src="~/static/illustrations/consultation.png" class="bd-placeholder-img card-img-top card-bg" />
                         <div class="card-body">
-                            <h2 class="card-title header-font"><span class="lavender">c</span><span class="apple">o</span><span class="burgundy">n</span><span class="violet">s</span><span class="violet">u</span><span class="violet">l</span><span class="violet">t</span><span class="violet">a</span><span class="violet">t</span><span class="violet">i</span><span class="violet">o</span><span class="violet">n</span>
-                                <span>&nbsp;</span><span class="violet">a</span><span class="violet">n</span><span class="violet">d</span></h2>
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">consultation and outreach</span>                                
+                                @*<span class="lavender">c</span><span class="apple">o</span><span class="burgundy">n</span><span class="violet">s</span><span class="violet">u</span><span class="violet">l</span><span class="violet">t</span><span class="violet">a</span><span class="violet">t</span><span class="violet">i</span><span class="violet">o</span><span class="violet">n</span>
+        <span>&nbsp;</span><span class="violet">a</span><span class="violet">n</span><span class="violet">d</span>*@
+                            </h2>
 
                             <p class="card-text">
                                 <text>
@@ -132,9 +134,9 @@
                         </div>
                     </div>
                 </div>
-                        @*@for (var i = 0; i < 8; i++)
+                @*@for (var i = 0; i < 8; i++)
                         {
-                          
+
                             <div class="card shadow-sm">
                                 @if (i == 0)
                                 {
@@ -194,10 +196,10 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         }
                     </div>*@
-                
+
             </div>
         </div>
     </main>
@@ -214,5 +216,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="~/static/js/main.js"></script>
 </body>
 </html>

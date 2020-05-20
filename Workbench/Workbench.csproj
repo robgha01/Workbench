@@ -317,6 +317,7 @@
     <Content Include="static\illustrations\professional_training.png" />
     <Content Include="static\illustrations\resources.png" />
     <Content Include="static\illustrations\social_interaction.png" />
+    <Content Include="static\js\main.js" />
     <Content Include="static\logos\logo_desktop.png" />
     <Content Include="static\main.css" />
     <Content Include="Web.config">
