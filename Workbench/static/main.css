@@ -19,11 +19,28 @@ h1 .header-font {
     letter-spacing: 3px;
 }
 
+.navbar-light .navbar-nav {
+    flex: 1;
+}
 
+.navbar-light .navbar-nav .nav-link {
+    color: #2DA7F9;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link
+{
+    color: #353BAA;
+}
+
+.flag {
+    width: 30px;
+}
 
 .pomegranate {
     color: #EF481E;
-    
 }
 
 .governor {
