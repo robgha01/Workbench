@@ -9,6 +9,7 @@ h1 .header-font {
     font-family: sandbox_melodramaregular;
     font-size: 2em;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .card-title.header-font {
@@ -39,6 +40,14 @@ h1 .header-font {
 
 .violet {
     color: #911AE5;
+}
+
+.jaffa {
+    color: #EF8935;
+}
+
+.tainoi {
+    color: #FDC95B;
 }
 
 .card-bg {
