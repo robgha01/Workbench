@@ -64,7 +64,19 @@ h1 .header-font {
 }
 
 .tainoi {
-    color: #FDC95B;
+    color: #F5E430;
+}
+
+.apple {
+    color: #35A334;
+}
+
+.lavender {
+    color: #E68BE9;
+}
+
+.dodger {
+    color: #2DA7F9;
 }
 
 .card-bg {
