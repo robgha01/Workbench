@@ -17,31 +17,31 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9d20216e0975d3e8")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8045bbac54648c52")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>StartPage</summary>
-	[PublishedModel("startPage")]
-	public partial class StartPage : PublishedContentModel
+	/// <summary>Start</summary>
+	[PublishedModel("start")]
+	public partial class Start : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
-		public new const string ModelTypeAlias = "startPage";
+		public new const string ModelTypeAlias = "start";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<StartPage, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Start, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public StartPage(IPublishedContent content)
+		public Start(IPublishedContent content)
 			: base(content)
 		{ }
 

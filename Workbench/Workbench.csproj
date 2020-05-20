@@ -308,6 +308,7 @@
     <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="static\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -326,9 +327,9 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="autism-spectrum\colorchart.pdf" />
-    <Content Include="autism-spectrum\SandboxMelodrama-8ye0.ttf" />
-    <Content Include="autism-spectrum\sandboxmelodrama-8ye0.woff" />
-    <Content Include="autism-spectrum\sandboxmelodrama-8ye0.woff2" />
+    <Content Include="static\fonts\SandboxMelodrama-8ye0.ttf" />
+    <Content Include="static\fonts\sandboxmelodrama-8ye0.woff" />
+    <Content Include="static\fonts\sandboxmelodrama-8ye0.woff2" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -339,7 +340,7 @@
     <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
-    <Content Include="Views\StartPage.cshtml" />
+    <Content Include="Views\Start.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
