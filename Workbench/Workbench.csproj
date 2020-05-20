@@ -308,6 +308,9 @@
     <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="static\flags\flag_pol.png" />
+    <Content Include="static\flags\flag_swe.png" />
+    <Content Include="static\flags\flag_uk.png" />
     <Content Include="static\illustrations\aba_therapy.png" />
     <Content Include="static\illustrations\consultation.png" />
     <Content Include="static\illustrations\index.html" />
