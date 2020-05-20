@@ -1,7 +1,29 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Start>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
 @using ContentModels = Umbraco.Web.PublishedModels;
+@using Workbench.Models;
 @{
-	Layout = null;
+    Layout = null;
+
+    var cards = new CardBuilder()
+        .Card(c => c.Title("Consultation and Outreach", "violet", "shamrock")
+                    .Image("/static/illustrations/consultation.png")
+                    .Text("Outreach and consultancy provides specialist support to upskill and build capacity in schools and services to maximize outcomes for autistic individuals (or those with related needs)."))
+        
+        .Card(c => c.Title("Parent Training", "violet")
+                    .Image("/static/illustrations/parent_training.png")
+                    .Text("This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Professional Training", "violet")
+                    .Image("/static/illustrations/professional_training.png")
+                    .Text("This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Social interaction therapy", "violet")
+                    .Image("/static/illustrations/social_interaction.png")
+                    .Text("This is a longer card with supporting textbelow as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Intensive interaction therapy", "violet")
+                    .Image("/static/illustrations/intensive_interaction.png")
+                    .Text("This is a longer card with supporting textbelow as a natural lead-in to additional content. This content is a little bit longer."))
+        .Build()
+        .ToList();
+
 }
 
 <!doctype html>
@@ -82,52 +104,40 @@
 
         <div class="album py-5 bg-light">
             <div class="container">
-                @*<div class="row">*@
-                    <div class="card-deck">
-                        @for (var i = 0; i < 5; i++)
-                        {
-                            @*<div class="col-md-4 py-2">*@
+                <div class="card-deck">
+                    @for (var i = 0; i < cards.Count; i++)
+                    {
+                        var card = cards[i];
+
                         <div class="card shadow-sm">
 
-                            @if (i == 3)
+                            @if (!string.IsNullOrEmpty(card.Image))
                             {
-                                <img src="~/static/illustrations/social_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
-                            }
-                            else if (i == 4)
-                            {
-                                @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-                                <img src="~/static/illustrations/intensive_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
-                            }
-                            else
-                            {
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <img src="@card.Image" class="bd-placeholder-img card-img-top card-bg" />
                             }
 
                             <div class="card-body">
-                                <h2 class="card-title header-font"><span class="violet">i</span>ntensive interaction therapy</h2>
-                                <p class="card-text">
-                                    @if (i == 1)
+                                <h2 class="card-title header-font">
+                                    @foreach(var cardTitlePart in card.Title)
                                     {
-                                        <text>
-                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                            This is a wider card with supporting text below as a natural lead-in to
-                                        </text>
+                                        <span class="@cardTitlePart.Color">@cardTitlePart.Character</span>
                                     }
-                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                </h2>
+                                @if (!string.IsNullOrEmpty(card.Text))
+                                {
+                                    <p class="card-text">@card.Text</p>
+                                }
+                                @*<div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
-                                </div>
+                                </div>*@
                             </div>
                         </div>
-                            @*</div>*@
-                        }
-                    </div>
-                @*</div>*@
+                    }
+                </div>
             </div>
         </div>
 
