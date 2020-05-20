@@ -1,7 +1,29 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Start>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
 @using ContentModels = Umbraco.Web.PublishedModels;
+@using Workbench.Models;
 @{
-	Layout = null;
+    Layout = null;
+
+    var cards = new CardBuilder()
+        .Card(c => c.Title("Consultation and Outreach", "violet", "shamrock")
+                    .Image("/static/illustrations/consultation.png")
+                    .Text("Outreach and consultancy provides specialist support to upskill and build capacity in schools and services to maximize outcomes for autistic individuals (or those with related needs)."))
+        
+        .Card(c => c.Title("Parent Training", "violet")
+                    .Image("/static/illustrations/parent_training.png")
+                    .Text("This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Professional Training", "violet")
+                    .Image("/static/illustrations/professional_training.png")
+                    .Text("This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Social interaction therapy", "violet")
+                    .Image("/static/illustrations/social_interaction.png")
+                    .Text("This is a longer card with supporting textbelow as a natural lead-in to additional content. This content is a little bit longer."))
+        .Card(c => c.Title("Intensive interaction therapy", "violet")
+                    .Image("/static/illustrations/intensive_interaction.png")
+                    .Text("This is a longer card with supporting textbelow as a natural lead-in to additional content. This content is a little bit longer."))
+        .Build()
+        .ToList();
+
 }
 
 <!doctype html>
