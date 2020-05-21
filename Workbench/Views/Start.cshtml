@@ -44,17 +44,27 @@
     @*<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">*@
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-    
+    @*<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#563d7c">*@
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicons/manifest.json">
+    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ef8935">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    @*<link href="album.css" rel="stylesheet">*@
     <link href="./static/main.css" rel="stylesheet">
 </head>
 <body>
@@ -121,17 +131,16 @@
     </header>
 
     <main role="main">
-
         <section class="jumbotron text-center bg-white">
             <div class="container">
-                <h1>
-                    <span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span>
-                    <span class="header-font">&nbsp;</span><span class="header-font apple">s</span><span class="header-font burgundy">p</span><span class="header-font governor">e</span><span class="header-font jaffa">c</span><span class="header-font shamrock">t</span><span class="header-font lavender">r</span><span class="header-font tainoi">u</span><span class="header-font dodger">m</span>
+                <h1><span class="header-font random-font-color">autism spectrum</span>
+                    @*<span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span>
+                    <span class="header-font">&nbsp;</span><span class="header-font apple">s</span><span class="header-font burgundy">p</span><span class="header-font governor">e</span><span class="header-font jaffa">c</span><span class="header-font shamrock">t</span><span class="header-font lavender">r</span><span class="header-font tainoi">u</span><span class="header-font dodger">m</span>*@
                 </h1>
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    <a href="#" class="btn btn-primary my-2">Contact</a>
+                    @*<a href="#" class="btn btn-secondary my-2">Secondary action</a>*@
                 </p>
             </div>
         </section>
@@ -154,11 +163,7 @@
                                 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
+                                <a href="#" class="text-muted"><u>Read more about Consultation and Outreach</u></a>
                             </div>
                         </div>
                     </div>
@@ -177,11 +182,121 @@
                                 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
+                                <a href="#" class="text-muted"><u>Read more about ABA therapy</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #3 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/intensive_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">intensive interaction</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Read more about Intensive interaction</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #4 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/parent_training.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">parent training</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Read more about Parent Training</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #5 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/play_therapy.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">play therapy</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Read more about Play Therapy</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #6 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/professional_training.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">professional training</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Read more about Professional Training</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #7 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/resources.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">resources</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Resources</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #8 -->
+                    <div class="card shadow-sm">
+                        <img src="~/static/illustrations/social_interaction.png" class="bd-placeholder-img card-img-top card-bg" />
+                        <div class="card-body">
+                            <h2 class="card-title header-font">
+                                <span class="random-font-color">social interaction</span>
+                            </h2>
+                            <p class="card-text">
+                                <text>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                </text>
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-muted"><u>Read more about Social interaction</u></a>
                             </div>
                         </div>
                     </div>

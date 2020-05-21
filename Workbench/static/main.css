@@ -14,7 +14,7 @@ h1 .header-font {
 }
 
 h2 {
-    font-weight: 600;
+    
 }
 
 .card-title.header-font {
@@ -29,7 +29,7 @@ h2 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #2DA7F9;
+    color: #3A8AC0;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
