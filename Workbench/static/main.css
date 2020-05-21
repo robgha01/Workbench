@@ -10,14 +10,20 @@ h1 .header-font {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    
 }
 
 h2 {
     
 }
 
-.card-title.header-font {
+.flag-font {
+    font-family: sandbox_melodramaregular;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.card-title.header-font, a.nav-link {
     font-family: sandbox_melodramaregular;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -123,7 +129,7 @@ h2 {
 @media (min-width: 576px) {
     .card-deck .card {
         min-width: 33.4%;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
     }
 }
 
