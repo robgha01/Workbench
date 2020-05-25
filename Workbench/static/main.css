@@ -48,10 +48,6 @@ h2 {
         color: #B7BBBF;
     }
 
-
-
-
-
 .flag {
     width: 30px;
 }
@@ -100,10 +96,6 @@ h2 {
     background-color: #F7F6E7;
 }
 
-
-
-
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -116,8 +108,6 @@ h2 {
 .bg-light {
     background-color: #DDF2F1 !important;
 }
-
-
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
