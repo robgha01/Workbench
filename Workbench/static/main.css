@@ -40,6 +40,18 @@ h2 {
     color: #353BAA;
 }
 
+.page-footer a {
+    color: #8A9197;
+}
+
+    .page-footer a:hover {
+        color: #B7BBBF;
+    }
+
+
+
+
+
 .flag {
     width: 30px;
 }
