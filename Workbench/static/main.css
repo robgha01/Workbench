@@ -118,6 +118,7 @@ h2 {
     background-position: center center;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
     background-color: #fff;
 }
     
