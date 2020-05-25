@@ -109,6 +109,42 @@ h2 {
     background-color: #DDF2F1 !important;
 }
 
+.jumbotron-full-hight {
+    height: 100vh;
+}
+
+.jumbotron-image-heading-container.jumbotron-container {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+    
+    /* Tint background over the image */
+    /*.jumbotron-image-heading-container.jumbotron-container::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }*/
+
+.jumbotron-image-heading-container .jumbotron-content {
+    position: relative;
+}
+
+    /*.jumbotron-image-heading-container .jumbotron-content::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255, 0.5);
+    }*/
+
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
