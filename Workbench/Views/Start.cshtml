@@ -65,7 +65,7 @@
 
     <!-- Custom styles for this template -->
     @*<link href="album.css" rel="stylesheet">*@
-    <link href="./static/main.css" rel="stylesheet">
+    <link href="/static/main.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -133,9 +133,10 @@
     <main role="main">
         <section class="jumbotron text-center bg-white">
             <div class="container">
-                <h1><span class="header-font random-font-color">autism spectrum</span>
+                <h1>
+                    <span class="header-font random-font-color">autism spectrum</span>
                     @*<span class="header-font pomegranate">a</span><span class="header-font governor">u</span><span class="header-font shamrock">t</span><span class="header-font burgundy">i</span><span class="header-font jaffa">s</span><span class="header-font tainoi">m</span>
-                    <span class="header-font">&nbsp;</span><span class="header-font apple">s</span><span class="header-font burgundy">p</span><span class="header-font governor">e</span><span class="header-font jaffa">c</span><span class="header-font shamrock">t</span><span class="header-font lavender">r</span><span class="header-font tainoi">u</span><span class="header-font dodger">m</span>*@
+                        <span class="header-font">&nbsp;</span><span class="header-font apple">s</span><span class="header-font burgundy">p</span><span class="header-font governor">e</span><span class="header-font jaffa">c</span><span class="header-font shamrock">t</span><span class="header-font lavender">r</span><span class="header-font tainoi">u</span><span class="header-font dodger">m</span>*@
                 </h1>
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 <p>
@@ -152,9 +153,10 @@
                     <div class="card shadow-sm">
                         <img src="~/static/illustrations/consultation.png" class="bd-placeholder-img card-img-top card-bg" />
                         <div class="card-body">
-                            <h2 class="card-title header-font">
-                                <span class="random-font-color">consultation and outreach</span>
-                            </h2>
+                            <div class="page-header">
+                                <h1 class="header-font"><span class="random-font-color">consultation and outreach</span></h1>
+                            </div>
+
                             <p class="card-text">
                                 <text>
                                     This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
@@ -305,15 +307,143 @@
         </div>
     </main>
 
-    <footer class="text-muted">
-        <div class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
-            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-5">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <img src="~/static/logos/logo_desktop.png" width="25" />
+                    <div class="row">
+                        <div class="col-12">
+                            <small class="text-muted">© 2017 - 2019</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-2">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize"><strong>Features</strong></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Cool stuff</a>
+                        </li>
+                        <li>
+                            <a href="#!">Random features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Team features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Stuff for developers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Another one</a>
+                        </li>
+                        <li>
+                            <a href="#!">Last time</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-2">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize"><strong>Resources</strong></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Resource</a>
+                        </li>
+                        <li>
+                            <a href="#!">Resource name</a>
+                        </li>
+                        <li>
+                            <a href="#!">Another resource</a>
+                        </li>
+                        <li>
+                            <a href="#!">Final resource</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-2">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize"><strong>Resources</strong></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Businesse</a>
+                        </li>
+                        <li>
+                            <a href="#!">Education</a>
+                        </li>
+                        <li>
+                            <a href="#!">Goverment</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gaming</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-2">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize"><strong>About</strong></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Team</a>
+                        </li>
+                        <li>
+                            <a href="#!">Location</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
         </div>
+        <!-- Footer Links -->
     </footer>
+    <!-- Footer -->
+    @*<footer class="text-muted">
+            <div class="container">
+                <p class="float-right">
+                    <a href="#">Back to top</a>
+                </p>
+                <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+                <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+            </div>
+        </footer>*@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
